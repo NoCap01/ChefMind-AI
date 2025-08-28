@@ -1,0 +1,389 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 8C52-B3F8
+F:\NEW FOLDER (3)
+¦   .flutter-plugins-dependencies
+¦   firestore.rules
+¦   project_structure.txt
+¦   pubspec.lock
+¦   pubspec.yaml
+¦   README.md
+¦   storage.rules
+¦   
++---.dart_tool
+¦   ¦   package_config.json
+¦   ¦   package_graph.json
+¦   ¦   version
+¦   ¦   
+¦   +---build
+¦   ¦   +---entrypoint
+¦   ¦   ¦       .packageLocations
+¦   ¦   ¦       build.dart
+¦   ¦   ¦       build.dart.dill
+¦   ¦   ¦       
+¦   ¦   +---fcd1995bc647fb959e82ea360c6c2c9a
+¦   ¦   ¦       asset_graph.json
+¦   ¦   ¦       
+¦   ¦   +---generated
+¦   ¦       +---chefmind_ai
+¦   ¦           +---lib
+¦   ¦               +---domain
+¦   ¦                   +---entities
+¦   ¦                           analytics.json_serializable.g.part
+¦   ¦                           community.json_serializable.g.part
+¦   ¦                           meal_plan.json_serializable.g.part
+¦   ¦                           pantry.json_serializable.g.part
+¦   ¦                           recipe.json_serializable.g.part
+¦   ¦                           user_profile.json_serializable.g.part
+¦   ¦                           
+¦   +---build_resolvers
+¦   ¦       sdk.sum
+¦   ¦       sdk.sum.deps
+¦   ¦       
+¦   +---extension_discovery
+¦   ¦       vs_code.json
+¦   ¦       
+¦   +---flutter_build
+¦   ¦       dart_plugin_registrant.dart
+¦   ¦       
+¦   +---pub
+¦       +---bin
+¦           +---build_runner
+¦                   build_runner.dart-3.9.0.snapshot
+¦                   
++---.dist
++---.kiro
+¦   +---specs
+¦       +---chefmind-ai-app
+¦               design.md
+¦               requirements.md
+¦               tasks.md
+¦               
++---.vscode
+¦       settings.json
+¦       
++---assets
+¦   +---animations
+¦   +---fonts
+¦   ¦       Inter-Medium.ttf
+¦   ¦       Inter-Regular.ttf
+¦   ¦       Inter-SemiBold.ttf
+¦   ¦       Poppins-Bold.ttf
+¦   ¦       Poppins-Medium.ttf
+¦   ¦       Poppins-Regular.ttf
+¦   ¦       Poppins-SemiBold.ttf
+¦   ¦       
+¦   +---icons
+¦   +---images
++---build
+¦   +---native_assets
+¦   ¦   +---windows
+¦   ¦           native_assets.json
+¦   ¦           
+¦   +---test_cache
+¦   ¦   +---build
+¦   ¦           d2976540244dba7be000c4f9690bfe66.cache.dill.track.dill
+¦   ¦           
+¦   +---unit_test_assets
+¦       ¦   AssetManifest.bin
+¦       ¦   AssetManifest.json
+¦       ¦   FontManifest.json
+¦       ¦   NativeAssetsManifest.json
+¦       ¦   NOTICES.Z
+¦       ¦   
+¦       +---assets
+¦       ¦   +---fonts
+¦       ¦           Inter-Medium.ttf
+¦       ¦           Inter-Regular.ttf
+¦       ¦           Inter-SemiBold.ttf
+¦       ¦           Poppins-Bold.ttf
+¦       ¦           Poppins-Medium.ttf
+¦       ¦           Poppins-Regular.ttf
+¦       ¦           Poppins-SemiBold.ttf
+¦       ¦           
+¦       +---fonts
+¦       ¦       MaterialIcons-Regular.otf
+¦       ¦       
+¦       +---packages
+¦       ¦   +---flutter_chat_ui
+¦       ¦       +---assets
+¦       ¦           ¦   icon-arrow.png
+¦       ¦           ¦   icon-attachment.png
+¦       ¦           ¦   icon-delivered.png
+¦       ¦           ¦   icon-document.png
+¦       ¦           ¦   icon-error.png
+¦       ¦           ¦   icon-seen.png
+¦       ¦           ¦   icon-send.png
+¦       ¦           ¦   
+¦       ¦           +---2.0x
+¦       ¦           ¦       icon-arrow.png
+¦       ¦           ¦       icon-attachment.png
+¦       ¦           ¦       icon-delivered.png
+¦       ¦           ¦       icon-document.png
+¦       ¦           ¦       icon-error.png
+¦       ¦           ¦       icon-seen.png
+¦       ¦           ¦       icon-send.png
+¦       ¦           ¦       
+¦       ¦           +---3.0x
+¦       ¦                   icon-arrow.png
+¦       ¦                   icon-attachment.png
+¦       ¦                   icon-delivered.png
+¦       ¦                   icon-document.png
+¦       ¦                   icon-error.png
+¦       ¦                   icon-seen.png
+¦       ¦                   icon-send.png
+¦       ¦                   
+¦       +---shaders
+¦               ink_sparkle.frag
+¦               
++---lib
+¦   ¦   firebase_options.dart
+¦   ¦   main.dart
+¦   ¦   
+¦   +---application
+¦   ¦   +---providers
+¦   ¦           auth_provider.dart
+¦   ¦           meal_plan_provider.dart
+¦   ¦           pantry_provider.dart
+¦   ¦           recipe_provider.dart
+¦   ¦           recipe_rating_provider.dart
+¦   ¦           
+¦   +---core
+¦   ¦   +---config
+¦   ¦   ¦       app_config.dart
+¦   ¦   ¦       
+¦   ¦   +---providers
+¦   ¦   ¦       auth_provider.dart
+¦   ¦   ¦       
+¦   ¦   +---router
+¦   ¦   ¦       app_router.dart
+¦   ¦   ¦       navigation_guards.dart
+¦   ¦   ¦       page_transitions.dart
+¦   ¦   ¦       route_constants.dart
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦   ¦       hive_service.dart
+¦   ¦   ¦       
+¦   ¦   +---theme
+¦   ¦           app_colors.dart
+¦   ¦           app_theme.dart
+¦   ¦           app_typography.dart
+¦   ¦           design_tokens.dart
+¦   ¦           
+¦   +---domain
+¦   ¦   +---entities
+¦   ¦   ¦       analytics.dart
+¦   ¦   ¦       analytics.freezed.dart
+¦   ¦   ¦       analytics.g.dart
+¦   ¦   ¦       community.dart
+¦   ¦   ¦       community.freezed.dart
+¦   ¦   ¦       community.g.dart
+¦   ¦   ¦       meal_plan.dart
+¦   ¦   ¦       meal_plan.freezed.dart
+¦   ¦   ¦       meal_plan.g.dart
+¦   ¦   ¦       pantry.dart
+¦   ¦   ¦       pantry.freezed.dart
+¦   ¦   ¦       pantry.g.dart
+¦   ¦   ¦       pantry_item.dart
+¦   ¦   ¦       recipe.dart
+¦   ¦   ¦       recipe.freezed.dart
+¦   ¦   ¦       recipe.g.dart
+¦   ¦   ¦       recipe_rating.dart
+¦   ¦   ¦       user_profile.dart
+¦   ¦   ¦       user_profile.freezed.dart
+¦   ¦   ¦       user_profile.g.dart
+¦   ¦   ¦       
+¦   ¦   +---exceptions
+¦   ¦   ¦       app_exceptions.dart
+¦   ¦   ¦       
+¦   ¦   +---repositories
+¦   ¦   ¦       meal_plan_repository.dart
+¦   ¦   ¦       pantry_repository.dart
+¦   ¦   ¦       recipe_rating_repository.dart
+¦   ¦   ¦       recipe_repository.dart
+¦   ¦   ¦       user_repository.dart
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦           community_service.dart
+¦   ¦           nutrition_service.dart
+¦   ¦           pantry_service.dart
+¦   ¦           recipe_analytics_service.dart
+¦   ¦           recipe_generation_service.dart
+¦   ¦           
+¦   +---features
+¦   ¦   +---analytics
+¦   ¦   ¦   +---presentation
+¦   ¦   ¦       +---screens
+¦   ¦   ¦       ¦       analytics_screen.dart
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---widgets
+¦   ¦   ¦               cooking_analytics_dashboard.dart
+¦   ¦   ¦               recipe_history_widget.dart
+¦   ¦   ¦               
+¦   ¦   +---auth
+¦   ¦   ¦   +---presentation
+¦   ¦   ¦       +---screens
+¦   ¦   ¦               auth_screen.dart
+¦   ¦   ¦               
+¦   ¦   +---home
+¦   ¦   ¦   +---presentation
+¦   ¦   ¦       +---screens
+¦   ¦   ¦       ¦       home_screen.dart
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---widgets
+¦   ¦   ¦               recipe_display_widget.dart
+¦   ¦   ¦               
+¦   ¦   +---meal_planner
+¦   ¦   ¦   +---presentation
+¦   ¦   ¦       +---screens
+¦   ¦   ¦               meal_planner_screen.dart
+¦   ¦   ¦               
+¦   ¦   +---pantry
+¦   ¦   ¦   +---presentation
+¦   ¦   ¦       +---screens
+¦   ¦   ¦               pantry_screen.dart
+¦   ¦   ¦               
+¦   ¦   +---profile
+¦   ¦   ¦   +---presentation
+¦   ¦   ¦       +---screens
+¦   ¦   ¦               profile_screen.dart
+¦   ¦   ¦               
+¦   ¦   +---recipe
+¦   ¦   ¦   +---presentation
+¦   ¦   ¦       +---screens
+¦   ¦   ¦       ¦       recipe_detail_screen.dart
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---widgets
+¦   ¦   ¦               cooking_mode_widget.dart
+¦   ¦   ¦               recipe_instructions_section.dart
+¦   ¦   ¦               recipe_nutrition_section.dart
+¦   ¦   ¦               recipe_rating_dialog.dart
+¦   ¦   ¦               
+¦   ¦   +---recipes
+¦   ¦   ¦   +---domain
+¦   ¦   ¦       +---validators
+¦   ¦   ¦               recipe_validators.dart
+¦   ¦   ¦               
+¦   ¦   +---recipe_book
+¦   ¦   ¦   +---presentation
+¦   ¦   ¦       +---screens
+¦   ¦   ¦       ¦       recipe_book_screen.dart
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---widgets
+¦   ¦   ¦               recipe_collection_widget.dart
+¦   ¦   ¦               recipe_filter_widget.dart
+¦   ¦   ¦               
+¦   ¦   +---shopping
+¦   ¦       +---presentation
+¦   ¦           +---screens
+¦   ¦                   shopping_screen.dart
+¦   ¦                   
+¦   +---infrastructure
+¦   ¦   +---repositories
+¦   ¦   ¦       firebase_auth_repository.dart
+¦   ¦   ¦       firebase_pantry_repository.dart
+¦   ¦   ¦       firebase_recipe_rating_repository.dart
+¦   ¦   ¦       firebase_recipe_repository.dart
+¦   ¦   ¦       firebase_user_repository.dart
+¦   ¦   ¦       
+¦   ¦   +---services
+¦   ¦           firebase_service.dart
+¦   ¦           hive_adapters.dart
+¦   ¦           ingredient_parser_service.dart
+¦   ¦           offline_service.dart
+¦   ¦           openai_prompts.dart
+¦   ¦           openai_service.dart
+¦   ¦           pantry_service_impl.dart
+¦   ¦           recipe_analytics_service_impl.dart
+¦   ¦           recipe_generation_service_impl.dart
+¦   ¦           sync_service.dart
+¦   ¦           
+¦   +---shared
+¦       +---presentation
+¦       ¦   +---modals
+¦       ¦   ¦       search_modal.dart
+¦       ¦   ¦       settings_modal.dart
+¦       ¦   ¦       
+¦       ¦   +---screens
+¦       ¦   ¦       main_screen.dart
+¦       ¦   ¦       
+¦       ¦   +---widgets
+¦       ¦           ingredient_input_widget.dart
+¦       ¦           recipe_card_widget.dart
+¦       ¦           
+¦       +---widgets
+¦               ingredient_chip.dart
+¦               loading_indicator.dart
+¦               recipe_card.dart
+¦               star_rating.dart
+¦               
++---test
+    +---application
+    ¦   +---providers
+    ¦           auth_provider_test.dart
+    ¦           
+    +---core
+    ¦   +---router
+    ¦   ¦       app_router_test.dart
+    ¦   ¦       navigation_guards_test.dart
+    ¦   ¦       page_transitions_simple_test.dart
+    ¦   ¦       page_transitions_test.dart
+    ¦   ¦       route_constants_test.dart
+    ¦   ¦       transitions_basic_test.dart
+    ¦   ¦       
+    ¦   +---theme
+    ¦           app_colors_test.dart
+    ¦           app_theme_test.dart
+    ¦           app_typography_test.dart
+    ¦           design_tokens_test.dart
+    ¦           
+    +---domain
+    ¦   +---services
+    ¦           recipe_analytics_service_test.dart
+    ¦           
+    +---features
+    ¦   +---recipe
+    ¦   ¦   +---presentation
+    ¦   ¦       +---widgets
+    ¦   ¦               recipe_action_bar_test.dart
+    ¦   ¦               recipe_header_widget_test.dart
+    ¦   ¦               
+    ¦   +---recipes
+    ¦       +---domain
+    ¦           +---entities
+    ¦           ¦       ingredient_test.dart
+    ¦           ¦       instruction_test.dart
+    ¦           ¦       recipe_ingredient_test.dart
+    ¦           ¦       recipe_test.dart
+    ¦           ¦       
+    ¦           +---validators
+    ¦                   recipe_validators_test.dart
+    ¦                   
+    +---infrastructure
+    ¦   +---repositories
+    ¦   ¦       firebase_recipe_rating_repository_test.dart
+    ¦   ¦       
+    ¦   +---services
+    ¦           ingredient_parser_service_test.dart
+    ¦           
+    +---integration
+    ¦       navigation_flow_test.dart
+    ¦       recipe_book_test.dart
+    ¦       recipe_detail_screen_test.dart
+    ¦       recipe_generation_flow_test.dart
+    ¦       
+    +---mocks
+    ¦       mock_services.dart
+    ¦       
+    +---shared
+        +---presentation
+        ¦   +---modals
+        ¦           search_modal_test.dart
+        ¦           settings_modal_test.dart
+        ¦           
+        +---widgets
+                ingredient_chip_test.dart
+                ingredient_input_widget_test.dart
+                loading_indicator_test.dart
+                recipe_card_test.dart
+                star_rating_test.dart
+                

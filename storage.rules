@@ -1,0 +1,89 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    function isValidImageFile() {
+      return request.resource.contentType.matches('image/.*') &&
+             request.resource.size < 10 * 1024 * 1024; // 10MB limit
+    }
+    
+    function isValidVideoFile() {
+      return request.resource.contentType.matches('video/.*') &&
+             request.resource.size < 100 * 1024 * 1024; // 100MB limit
+    }
+
+    // User profile images
+    match /users/{userId}/profile/{imageId} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(userId) && isValidImageFile();
+      allow delete: if isOwner(userId);
+    }
+
+    // Recipe images
+    match /recipes/{recipeId}/images/{imageId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isValidImageFile();
+      allow delete: if isAuthenticated(); // Allow recipe author to delete
+    }
+
+    // Community content images
+    match /community/recipes/{recipeId}/images/{imageId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isValidImageFile();
+      allow delete: if isAuthenticated();
+    }
+
+    // Cooking group images
+    match /community/groups/{groupId}/images/{imageId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isValidImageFile();
+      allow delete: if isAuthenticated();
+    }
+
+    // Challenge images
+    match /community/challenges/{challengeId}/images/{imageId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isValidImageFile();
+      allow delete: if isAuthenticated();
+    }
+
+    // Tutorial videos and images
+    match /tutorials/{tutorialId}/media/{mediaId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && 
+                     (isValidImageFile() || isValidVideoFile());
+      allow delete: if isAuthenticated();
+    }
+
+    // Pantry item images
+    match /users/{userId}/pantry/{itemId}/images/{imageId} {
+      allow read, write, delete: if isOwner(userId) && isValidImageFile();
+    }
+
+    // Meal plan images
+    match /users/{userId}/mealPlans/{planId}/images/{imageId} {
+      allow read, write, delete: if isOwner(userId) && isValidImageFile();
+    }
+
+    // Temporary uploads (for processing)
+    match /temp/{userId}/{uploadId} {
+      allow read, write: if isOwner(userId) && 
+                           (isValidImageFile() || isValidVideoFile());
+      allow delete: if isOwner(userId);
+    }
+
+    // Public assets (app resources)
+    match /public/{allPaths=**} {
+      allow read: if true;
+      allow write: if false; // Only admin can upload public assets
+    }
+  }
+}
