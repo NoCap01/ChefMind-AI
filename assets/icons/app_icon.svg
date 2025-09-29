@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chefHatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F1F5F9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sparkleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0EA5E9;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#6366F1" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="512" cy="512" r="480" fill="url(#backgroundGradient)" filter="url(#shadow)"/>
+  
+  <!-- Inner highlight circle -->
+  <circle cx="512" cy="512" r="440" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Chef hat main body -->
+  <path d="M512 280 C580 280 635 335 635 403 C635 420 632 436 627 451 L627 580 C627 620 594 653 554 653 L470 653 C430 653 397 620 397 580 L397 451 C392 436 389 420 389 403 C389 335 444 280 512 280 Z" fill="url(#chefHatGradient)" stroke="rgba(100,116,139,0.2)" stroke-width="3"/>
+  
+  <!-- Chef hat pleats -->
+  <path d="M420 320 C430 300 450 285 475 280" fill="none" stroke="rgba(100,116,139,0.3)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M480 285 C500 275 520 275 540 285" fill="none" stroke="rgba(100,116,139,0.3)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M549 280 C574 285 594 300 604 320" fill="none" stroke="rgba(100,116,139,0.3)" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Chef hat band -->
+  <rect x="397" y="580" width="230" height="40" rx="20" fill="url(#accentGradient)"/>
+  
+  <!-- AI Sparkle elements -->
+  <g transform="translate(450, 350)">
+    <!-- Main sparkle -->
+    <path d="M0 -20 L5 -5 L20 0 L5 5 L0 20 L-5 5 L-20 0 L-5 -5 Z" fill="url(#sparkleGradient)" opacity="0.9"/>
+    <!-- Small sparkles -->
+    <circle cx="35" cy="-10" r="4" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="-30" cy="15" r="3" fill="#EF4444" opacity="0.7"/>
+    <circle cx="25" cy="25" r="2" fill="#F59E0B" opacity="0.6"/>
+  </g>
+  
+  <!-- Additional sparkles around the hat -->
+  <g transform="translate(580, 400)">
+    <path d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3 Z" fill="url(#sparkleGradient)" opacity="0.7"/>
+  </g>
+  
+  <g transform="translate(440, 480)">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#10B981" opacity="0.6"/>
+  </g>
+  
+  <!-- Cooking utensils crossed behind -->
+  <g transform="translate(512, 650)" opacity="0.4">
+    <!-- Spoon -->
+    <path d="M-60 -80 C-60 -95 -48 -107 -33 -107 C-18 -107 -6 -95 -6 -80 L-6 60 C-6 70 -14 78 -24 78 L-42 78 C-52 78 -60 70 -60 60 Z" fill="rgba(255,255,255,0.8)"/>
+    <!-- Fork -->
+    <path d="M6 -80 L6 60 C6 70 14 78 24 78 L42 78 C52 78 60 70 60 60 L60 -80 M20 -107 L20 -80 M35 -107 L35 -80 M50 -107 L50 -80" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Bottom accent curve -->
+  <path d="M200 800 Q512 750 824 800 L824 900 Q512 850 200 900 Z" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Subtle brain/AI circuit pattern in background -->
+  <g opacity="0.1">
+    <circle cx="350" cy="200" r="3" fill="white"/>
+    <circle cx="674" cy="180" r="2" fill="white"/>
+    <circle cx="300" cy="750" r="2" fill="white"/>
+    <circle cx="720" cy="780" r="3" fill="white"/>
+    <path d="M350 200 L400 220 L450 200" stroke="white" stroke-width="1" fill="none"/>
+    <path d="M674 180 L620 200 L580 180" stroke="white" stroke-width="1" fill="none"/>
+  </g>
+</svg>

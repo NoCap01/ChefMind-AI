@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChefMind Icon Generator</title>
+</head>
+<body>
+    <canvas id="iconCanvas" width="1024" height="1024" style="border: 1px solid #ccc;"></canvas>
+    <br>
+    <button onclick="downloadIcon()">Download Icon</button>
+    
+    <script>
+        const canvas = document.getElementById('iconCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        function drawIcon() {
+            const size = 1024;
+            const center = size / 2;
+            
+            // Background gradient
+            const bgGradient = ctx.createLinearGradient(0, 0, size, size);
+            bgGradient.addColorStop(0, '#6366F1'); // Indigo 500
+            bgGradient.addColorStop(1, '#8B5CF6'); // Violet 500
+            
+            // Draw background circle
+            ctx.fillStyle = bgGradient;
+            ctx.beginPath();
+            ctx.arc(center, center, 480, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Inner highlight circle
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(center, center, 440, 0, 2 * Math.PI);
+            ctx.stroke();
+            
+            // Chef hat gradient
+            const hatGradient = ctx.createLinearGradient(0, 0, size, size);
+            hatGradient.addColorStop(0, '#FFFFFF');
+            hatGradient.addColorStop(1, '#F8FAFC');
+            
+            // Chef hat main body
+            ctx.fillStyle = hatGradient;
+            ctx.strokeStyle = 'rgba(148, 163, 184, 0.3)';
+            ctx.lineWidth = 4;
+            ctx.beginPath();
+            ctx.ellipse(center, 420, 180, 140, 0, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+            
+            // Chef hat puffs
+            ctx.beginPath();
+            ctx.arc(450, 320, 60, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.arc(center, 300, 70, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.arc(574, 320, 60, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+            
+            // Chef hat band
+            const bandGradient = ctx.createLinearGradient(0, 0, size, size);
+            bandGradient.addColorStop(0, '#10B981'); // Emerald 500
+            bandGradient.addColorStop(1, '#0EA5E9'); // Sky 500
+            
+            ctx.fillStyle = bandGradient;
+            ctx.beginPath();
+            ctx.roundRect(332, 520, 360, 50, 25);
+            ctx.fill();
+            
+            // AI sparkle
+            ctx.fillStyle = 'rgba(245, 158, 11, 0.9)'; // Amber
+            ctx.beginPath();
+            const sparkleX = 420, sparkleY = 380, sparkleSize = 25;
+            for (let i = 0; i < 8; i++) {
+                const angle = i * Math.PI / 4;
+                const radius = i % 2 === 0 ? sparkleSize : sparkleSize * 0.4;
+                const x = sparkleX + radius * Math.cos(angle);
+                const y = sparkleY + radius * Math.sin(angle);
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.closePath();
+            ctx.fill();
+            
+            // Small sparkle circles
+            ctx.fillStyle = 'rgba(239, 68, 68, 0.8)'; // Red
+            ctx.beginPath();
+            ctx.arc(580, 360, 8, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = 'rgba(16, 185, 129, 0.7)'; // Emerald
+            ctx.beginPath();
+            ctx.arc(440, 480, 6, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = 'rgba(245, 158, 11, 0.6)'; // Amber
+            ctx.beginPath();
+            ctx.arc(590, 450, 5, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Cooking utensils
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+            
+            // Spoon
+            ctx.beginPath();
+            ctx.ellipse(472, 620, 15, 25, 0, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.roundRect(467, 645, 10, 80, 5);
+            ctx.fill();
+            
+            // Fork
+            ctx.beginPath();
+            ctx.roundRect(547, 620, 10, 105, 5);
+            ctx.fill();
+            
+            // Fork tines
+            for (let i = 0; i < 3; i++) {
+                ctx.beginPath();
+                ctx.roundRect(537 + i * 10, 605, 6, 30, 3);
+                ctx.fill();
+            }
+            
+            // Bottom highlight
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.beginPath();
+            ctx.ellipse(center, 850, 300, 50, 0, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Tech dots
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+            const dots = [[300, 200, 4], [724, 180, 3], [280, 800, 3], [744, 820, 4]];
+            dots.forEach(([x, y, r]) => {
+                ctx.beginPath();
+                ctx.arc(x, y, r, 0, 2 * Math.PI);
+                ctx.fill();
+            });
+        }
+        
+        function downloadIcon() {
+            const link = document.createElement('a');
+            link.download = 'app_icon_1024.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // Draw the icon when page loads
+        drawIcon();
+    </script>
+</body>
+</html>

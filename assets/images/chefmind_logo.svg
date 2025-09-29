@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0EA5E9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Chef Hat + Brain Fusion Logo -->
+  <!-- Main chef hat shape -->
+  <path d="M50 120 C50 80 80 50 120 50 C160 50 190 80 190 120 C190 130 185 140 175 145 L175 160 C175 170 165 180 155 180 L85 180 C75 180 65 170 65 160 L65 145 C55 140 50 130 50 120 Z" fill="url(#logoGradient)"/>
+  
+  <!-- Chef hat band -->
+  <rect x="65" y="160" width="110" height="20" rx="10" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- Brain pattern overlay -->
+  <!-- Left brain hemisphere -->
+  <path d="M80 80 C85 75 90 80 95 85 C100 90 95 95 90 100 C85 105 80 100 75 95 C70 90 75 85 80 80 Z" fill="rgba(255,255,255,0.4)"/>
+  <path d="M75 100 C80 95 85 100 90 105 C95 110 90 115 85 120 C80 125 75 120 70 115 C65 110 70 105 75 100 Z" fill="rgba(255,255,255,0.4)"/>
+  
+  <!-- Right brain hemisphere -->
+  <path d="M120 80 C125 75 130 80 135 85 C140 90 135 95 130 100 C125 105 120 100 115 95 C110 90 115 85 120 80 Z" fill="rgba(255,255,255,0.4)"/>
+  <path d="M125 100 C130 95 135 100 140 105 C145 110 140 115 135 120 C130 125 125 120 120 115 C115 110 120 105 125 100 Z" fill="rgba(255,255,255,0.4)"/>
+  
+  <!-- Central connection -->
+  <path d="M95 90 C105 85 115 85 125 90 C130 95 125 100 120 105 C115 110 105 110 100 105 C95 100 90 95 95 90 Z" fill="rgba(255,255,255,0.5)"/>
+  
+  <!-- Subtle sparkles for AI -->
+  <circle cx="70" cy="70" r="3" fill="rgba(255,255,255,0.8)"/>
+  <circle cx="150" cy="65" r="2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="160" cy="130" r="2.5" fill="rgba(255,255,255,0.7)"/>
+</svg>
